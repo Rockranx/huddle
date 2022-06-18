@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+iframe{
+    color: hsl(208, 11%, 55%);
+    color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    color: hsl(322, 100%, 66%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.header{
+    min-height: 100vh;
+    background-image: url(./bg-hero-desktop.svg);
+    background-size: cover;
+    background-color: hsl(193, 100%, 96%);
+    padding: 60px 100px 60px 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo img{
+    display: inline-block;
+    width: 100%;
+}
+
+.navbarButton button{
+    font-family: "Poppins";
+    background-color: white;
+    padding: 20px 70px;
+    border-radius: 40px;
+    border: 1px solid hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbarButton button:hover{
+    opacity: .7;
+}
+
+.build{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.buildH1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.buildP{
+    margin-bottom: 30px;
+}
+
+.buildButton button, .absolute--container button{
+    background-color: hsl(322, 100%, 66%);
+    padding: 20px 70px;
+    border-radius: 40px;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buildButton button:hover, .absolute--container button:hover{
+    opacity: .7;
+}
+
+.build--right, .build--left{
+    width: 50%;
+}
+
+.build--right img{
+    display: inline-block;
+    width: 100%;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 100px;
+    gap: 30px;
+}
+
+.grow, .flow, .users{
+    box-shadow: 0px 0px 5px 2px hsla(209, 11%, 55%, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    padding-left: 100px;
+    padding-right: 40px;
+    max-width: 100%;
+    align-items: center;
+}
+
+.grow--right, .flow--right, .users--right{
+    width: 40%;
+}
+
+.grow--right img, .flow--right img, .users--right img{
+    width: 100%;
+    display: inline-block;
+}
+
+.grow--left, .flow--left, .users--left{
+    width: 50%;
+}
+
+.flow{
+    flex-direction: row-reverse;
+}
+
+.absolute{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.absolute--container {
+    position: relative;
+    top: 50px;
+    background: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px hsl(209deg 11% 55% / 30%);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.absolute--container h4{
+    color: hsl(192, 100%, 9%);
+}
+
+.footer{
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(193, 100%, 96%);
+    padding: 60px 100px;
+    padding-top: 110px;
+}
+
+.footer--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer--left{
+    width: 35%;
+}
+
+.footerImg{
+    margin-bottom: 40px;
+}
+
+.footerText{
+    margin: 20px 0;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.footer--right{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.one .footerListItem, .two .footerListItem{
+    margin-bottom: 10px;
+}
+
+.ul a{
+    color: hsl(193, 100%, 96%);
+}
+
+.ul a:hover{
+    text-decoration: underline;
+}
+
+.three .footerListItem i:hover{
+    border-color: hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+.three{
+    display: flex;
+    gap: 10px;
+}
+
+.three .footerListItem i{
+    border-radius: 50%;
+    border: 1px solid hsl(193, 100%, 96%);
+}
+
+.copyright{
+    margin-top: 10px;
+    text-align: right;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 440px) {
+
+    .header{
+        padding: 20px;
+    }
+
+    .navbarButton button{
+        padding: 8px 30px;
+    }
+    .build{
+        flex-direction: column;
+    }
+
+    .build--left{
+        width: 100%;
+    }
+
+    .build--right{
+        width: 100%;
+    }
+
+    .features{
+        padding: 20px;
+        padding-top: 60px;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    .footerText{
+        gap: 20px;
+    }
+
+    .absolute--container h2{
+        font-size: 16px;
+    }
+
+    .absolute--container{
+        padding: 40px 0;
+    }
+
+    .navbarButton button{
+        width: 150px;
+        padding: 5px;
+    }
+
+    .grow, .flow, .users{
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .grow--left, .flow--left, .users--left{
+        width: 100%;
+    }
+
+    .grow--right, .flow--right, .users--right{
+        width: 100%;
+    }
+
+    .footer{
+        padding: 60px 20px;
+        padding-top: 110px;
+    }
+
+    .build{
+        text-align: center;
+    }
+
+    .buildH1{
+        font-size: 25px;
+    }
+
+    .footer--left, .footer--right{
+        width: 100%;
+    }
+
+    .footer--container{
+        flex-direction: column;
+    }
+
+    .footer--right{
+        flex-direction: column;
+    }
+
+    .three{
+        align-self: center;
+    }
+
+    .absolute--container{
+        width: 90%;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+}
